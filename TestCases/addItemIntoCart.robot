@@ -16,3 +16,4 @@ addItemIntoCart
     Page Should Contain Element     id:shopping_cart_container
     Element Text Should Be    css:.shopping_cart_badge    1
     Capture Page Screenshot
+    Close Browser

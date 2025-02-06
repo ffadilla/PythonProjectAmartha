@@ -18,3 +18,4 @@ navigateToAboutMenu
     ${title}    Get Title
     Should Be Equal As Strings    ${title}    Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing
     Capture Page Screenshot
+    Close Browser

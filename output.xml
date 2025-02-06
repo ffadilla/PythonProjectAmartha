@@ -1,110 +1,236 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.2 on win32)" generated="2025-02-06T23:05:19.141365" rpa="false" schemaversion="5">
-<suite id="s1" name="navigateToAboutMenu" source="C:\Users\User\PycharmProjects\PythonProjectAmartha\TestCases\navigateToAboutMenu.robot">
-<test id="s1-t1" name="navigateToAboutMenu" line="10">
+<robot generator="Robot 7.2 (Python 3.13.2 on win32)" generated="2025-02-06T23:15:37.667022" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="C:\Users\User\PycharmProjects\PythonProjectAmartha\TestCases">
+<suite id="s1-s1" name="addItemIntoCart" source="C:\Users\User\PycharmProjects\PythonProjectAmartha\TestCases\addItemIntoCart.robot">
+<test id="s1-s1-t1" name="addItemIntoCart" line="9">
 <kw name="openBrowserAndNavigate" owner="baseUrlAndNavigate">
 <kw name="Get Variables" owner="loginVar">
-<msg time="2025-02-06T23:05:19.763305" level="INFO">${variables} = {'baseUrl': 'https://www.saucedemo.com/', 'user': 'standard_user', 'pwd': 'secret_sauce'}</msg>
+<msg time="2025-02-06T23:15:37.894268" level="INFO">${variables} = {'baseUrl': 'https://www.saucedemo.com/', 'user': 'standard_user', 'pwd': 'secret_sauce'}</msg>
 <var>${variables}</var>
-<status status="PASS" start="2025-02-06T23:05:19.763194" elapsed="0.000138"/>
+<status status="PASS" start="2025-02-06T23:15:37.894158" elapsed="0.000139"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-02-06T23:05:19.764082" level="INFO">${baseUrl} = https://www.saucedemo.com/</msg>
+<msg time="2025-02-06T23:15:37.895014" level="INFO">${baseUrl} = https://www.saucedemo.com/</msg>
 <var>${baseUrl}</var>
 <arg>${variables['baseUrl']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-02-06T23:05:19.763742" elapsed="0.000368"/>
+<status status="PASS" start="2025-02-06T23:15:37.894666" elapsed="0.000375"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-02-06T23:05:19.764472" level="INFO">${username} = standard_user</msg>
+<msg time="2025-02-06T23:15:37.895399" level="INFO">${username} = standard_user</msg>
 <var>${username}</var>
 <arg>${variables['user']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-02-06T23:05:19.764209" elapsed="0.000282"/>
+<status status="PASS" start="2025-02-06T23:15:37.895130" elapsed="0.000289"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-02-06T23:05:19.764800" level="INFO">${password} = secret_sauce</msg>
+<msg time="2025-02-06T23:15:37.895731" level="INFO">${password} = secret_sauce</msg>
 <var>${password}</var>
 <arg>${variables['pwd']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-02-06T23:05:19.764563" elapsed="0.000256"/>
+<status status="PASS" start="2025-02-06T23:15:37.895489" elapsed="0.000261"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-06T23:05:19.765080" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-02-06T23:15:37.896008" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${baseUrl}</arg>
 <arg>${baseBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-06T23:05:19.764915" elapsed="6.974160"/>
+<status status="PASS" start="2025-02-06T23:15:37.895848" elapsed="6.956712"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-06T23:05:26.739402" elapsed="0.265271"/>
+<status status="PASS" start="2025-02-06T23:15:44.852878" elapsed="0.259098"/>
 </kw>
-<status status="PASS" start="2025-02-06T23:05:19.762932" elapsed="7.241857"/>
+<status status="PASS" start="2025-02-06T23:15:37.893832" elapsed="7.218274"/>
 </kw>
 <kw name="userLogin" owner="baseUrlAndNavigate">
 <kw name="Get Variables" owner="loginVar">
-<msg time="2025-02-06T23:05:27.005559" level="INFO">${variables} = {'baseUrl': 'https://www.saucedemo.com/', 'user': 'standard_user', 'pwd': 'secret_sauce'}</msg>
+<msg time="2025-02-06T23:15:45.112833" level="INFO">${variables} = {'baseUrl': 'https://www.saucedemo.com/', 'user': 'standard_user', 'pwd': 'secret_sauce'}</msg>
 <var>${variables}</var>
-<status status="PASS" start="2025-02-06T23:05:27.005439" elapsed="0.000148"/>
+<status status="PASS" start="2025-02-06T23:15:45.112717" elapsed="0.000141"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-02-06T23:05:27.006002" level="INFO">${username} = standard_user</msg>
+<msg time="2025-02-06T23:15:45.113327" level="INFO">${username} = standard_user</msg>
 <var>${username}</var>
 <arg>${variables['user']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-02-06T23:05:27.005671" elapsed="0.000354"/>
+<status status="PASS" start="2025-02-06T23:15:45.112945" elapsed="0.000412"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2025-02-06T23:05:27.006393" level="INFO">${password} = secret_sauce</msg>
+<msg time="2025-02-06T23:15:45.113736" level="INFO">${password} = secret_sauce</msg>
 <var>${password}</var>
 <arg>${variables['pwd']}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2025-02-06T23:05:27.006114" elapsed="0.000299"/>
+<status status="PASS" start="2025-02-06T23:15:45.113452" elapsed="0.000304"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-06T23:05:27.006758" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-02-06T23:15:45.114113" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T23:05:27.006495" elapsed="0.052921"/>
+<status status="PASS" start="2025-02-06T23:15:45.113837" elapsed="0.054423"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-06T23:05:27.059877" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<msg time="2025-02-06T23:15:45.168680" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
 <arg>id:password</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T23:05:27.059635" elapsed="0.016322"/>
+<status status="PASS" start="2025-02-06T23:15:45.168458" elapsed="0.020329"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-06T23:05:27.076320" level="INFO">Clicking element 'id:login-button'.</msg>
+<msg time="2025-02-06T23:15:45.189276" level="INFO">Clicking element 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T23:05:27.076140" elapsed="0.244831"/>
+<status status="PASS" start="2025-02-06T23:15:45.188986" elapsed="0.239741"/>
 </kw>
-<status status="PASS" start="2025-02-06T23:05:27.005166" elapsed="0.315912"/>
+<status status="PASS" start="2025-02-06T23:15:45.112457" elapsed="0.316418"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-06T23:05:27.321642" level="INFO">Clicking element 'id:react-burger-menu-btn'.</msg>
+<msg time="2025-02-06T23:15:45.429289" level="INFO">Clicking element 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T23:15:45.429130" elapsed="0.225414"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:45.655305" level="INFO">Clicking element 'id:shopping_cart_container'.</msg>
+<arg>id:shopping_cart_container</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T23:15:45.655018" elapsed="0.216018"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:45.871868" level="INFO">Verifying element 'css:.inventory_item_name' contains exact text 'Sauce Labs Fleece Jacket'.</msg>
+<arg>css:.inventory_item_name</arg>
+<arg>Sauce Labs Fleece Jacket</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-02-06T23:15:45.871645" elapsed="0.008797"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:45.882532" level="INFO">Current page contains element 'id:shopping_cart_container'.</msg>
+<arg>id:shopping_cart_container</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-06T23:15:45.880774" elapsed="0.001807"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:45.882912" level="INFO">Verifying element 'css:.shopping_cart_badge' contains exact text '1'.</msg>
+<arg>css:.shopping_cart_badge</arg>
+<arg>1</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-02-06T23:15:45.882763" elapsed="0.005462"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:45.939425" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-06T23:15:45.888385" elapsed="0.051183"/>
+</kw>
+<status status="PASS" start="2025-02-06T23:15:37.893237" elapsed="8.046766"/>
+</test>
+<status status="PASS" start="2025-02-06T23:15:37.692549" elapsed="8.248584"/>
+</suite>
+<suite id="s1-s2" name="NavigateToAboutMenu" source="C:\Users\User\PycharmProjects\PythonProjectAmartha\TestCases\NavigateToAboutMenu.robot">
+<test id="s1-s2-t1" name="navigateToAboutMenu" line="10">
+<kw name="openBrowserAndNavigate" owner="baseUrlAndNavigate">
+<kw name="Get Variables" owner="loginVar">
+<msg time="2025-02-06T23:15:46.416298" level="INFO">${variables} = {'baseUrl': 'https://www.saucedemo.com/', 'user': 'standard_user', 'pwd': 'secret_sauce'}</msg>
+<var>${variables}</var>
+<status status="PASS" start="2025-02-06T23:15:46.415948" elapsed="0.000373"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-06T23:15:46.416783" level="INFO">${baseUrl} = https://www.saucedemo.com/</msg>
+<var>${baseUrl}</var>
+<arg>${variables['baseUrl']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-06T23:15:46.416451" elapsed="0.000367"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-06T23:15:46.417371" level="INFO">${username} = standard_user</msg>
+<var>${username}</var>
+<arg>${variables['user']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-06T23:15:46.417082" elapsed="0.000310"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-06T23:15:46.417714" level="INFO">${password} = secret_sauce</msg>
+<var>${password}</var>
+<arg>${variables['pwd']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-06T23:15:46.417472" elapsed="0.000286"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:46.418129" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>${baseBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-06T23:15:46.417905" elapsed="6.883381"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-06T23:15:53.301547" elapsed="0.257901"/>
+</kw>
+<status status="PASS" start="2025-02-06T23:15:46.415760" elapsed="7.143870"/>
+</kw>
+<kw name="userLogin" owner="baseUrlAndNavigate">
+<kw name="Get Variables" owner="loginVar">
+<msg time="2025-02-06T23:15:53.560490" level="INFO">${variables} = {'baseUrl': 'https://www.saucedemo.com/', 'user': 'standard_user', 'pwd': 'secret_sauce'}</msg>
+<var>${variables}</var>
+<status status="PASS" start="2025-02-06T23:15:53.560384" elapsed="0.000132"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-06T23:15:53.560935" level="INFO">${username} = standard_user</msg>
+<var>${username}</var>
+<arg>${variables['user']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-06T23:15:53.560599" elapsed="0.000361"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-06T23:15:53.561302" level="INFO">${password} = secret_sauce</msg>
+<var>${password}</var>
+<arg>${variables['pwd']}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-06T23:15:53.561037" elapsed="0.000287"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:53.561554" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T23:15:53.561405" elapsed="0.059273"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:53.621229" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T23:15:53.620945" elapsed="0.016370"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:53.637688" level="INFO">Clicking element 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T23:15:53.637508" elapsed="0.238862"/>
+</kw>
+<status status="PASS" start="2025-02-06T23:15:53.560108" elapsed="0.316377"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T23:15:53.876913" level="INFO">Clicking element 'id:react-burger-menu-btn'.</msg>
 <arg>id:react-burger-menu-btn</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T23:05:27.321475" elapsed="0.216200"/>
+<status status="PASS" start="2025-02-06T23:15:53.876741" elapsed="0.209161"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-06T23:05:27.538335" level="INFO">Clicking element 'id:about_sidebar_link'.</msg>
+<msg time="2025-02-06T23:15:54.086425" level="INFO">Clicking element 'id:about_sidebar_link'.</msg>
 <arg>id:about_sidebar_link</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T23:05:27.538147" elapsed="45.924582"/>
+<status status="PASS" start="2025-02-06T23:15:54.086203" elapsed="45.661401"/>
 </kw>
 <kw name="GET" owner="RequestsLibrary">
-<msg time="2025-02-06T23:06:13.508349" level="INFO">GET Request : url=https://saucelabs.com/ 
+<msg time="2025-02-06T23:16:39.798031" level="INFO">GET Request : url=https://saucelabs.com/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2025-02-06T23:06:13.509051" level="INFO">GET Response : url=https://saucelabs.com/ 
+<msg time="2025-02-06T23:16:39.798814" level="INFO">GET Response : url=https://saucelabs.com/ 
  status=200, reason=OK 
- headers={'Cdn-Cache-Control': 'max-age=1200', 'Content-Encoding': 'br', 'Content-Security-Policy': "frame-ancestors 'self' https://app.contentful.com *.saucelabs.com:8000 *.saucelabs.com *.saucelabs.net;", 'Server': 'Vercel', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Matched-Path': '/', 'X-Powered-By': 'Next.js', 'X-Vercel-Cache': 'HIT', 'X-Vercel-Id': 'sin1::iad1::bs6sk-1738855937975-1ffb0b8ed5bc', 'X-Xss-Protection': '1; mode=block', 'Via': '1.1 google', 'Date': 'Thu, 06 Feb 2025 15:12:44 GMT', 'Cache-Control': 'public,max-age=3600', 'Age': '3210', 'ETag': 'W/"66aipl6iwq8b9j"', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '58014', 'X-Cloud-CDN-Cache-Hit': 'hit', 'X_BACKEND': 'marketing-cms', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'} 
+ headers={'Cdn-Cache-Control': 'max-age=1200', 'Content-Encoding': 'br', 'Content-Security-Policy': "frame-ancestors 'self' https://app.contentful.com *.saucelabs.com:8000 *.saucelabs.com *.saucelabs.net;", 'Server': 'Vercel', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Matched-Path': '/', 'X-Powered-By': 'Next.js', 'X-Vercel-Cache': 'HIT', 'X-Vercel-Id': 'sin1::iad1::4cxvj-1738858554674-7266971e7b9c', 'X-Xss-Protection': '1; mode=block', 'Via': '1.1 google', 'Date': 'Thu, 06 Feb 2025 16:12:45 GMT', 'Cache-Control': 'public,max-age=3600', 'Age': '235', 'ETag': 'W/"q3tqhlc61y8b9j"', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '58055', 'X-Cloud-CDN-Cache-Hit': 'hit', 'X_BACKEND': 'marketing-cms', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'} 
  body=��_��}��ߟ/
 7��LI~R����d&lt;��^[���Ȧ��8@Ӳ������=��/vS��v鶩D�2�H�,��I�&amp;Euν���S�73�{�)�Y̐*ސ23�wF̝J~#��PR�xJ��!my)��"3$�rAr]�?���IQSrPN�pR9��I�&amp;�"I���l����\d�KA����qt�p����6�Ү����]��nC�.?nQ��wH:*��?#)�R59gGQ���*�fp�8O,*�%���ޔ�U%��'3���#���Y�F_�:�ѵw!D�����
 ���k��݅��z�,�onmj��&lt;*[ٿ�AO��&amp;��M���V����
@@ -143,50 +269,54 @@ i&gt;���r�hpR��T��D�#�@��+�)l�-�4&lt;���$�
 �#j&lt;, �R�T�!�m��0�\g��&amp;�q0r�&lt;i:0��Ia�|y��͕m�K.�%J��^�eX�uJ���R!-��د226"a��'cq&lt;2���B����B��5u�d21�;&amp;e&gt;�FV��HT�.���R׵~H��Y	�l䜒�T���*�y+�	Y.�z�(����qe8��,d0=&gt;[Jj��.����O�֤y���u��.�/R�����g��������y����b`�*��g�e����8�~�aW��3���P3�*9O.�{^srZ^������R���'�֜W����I�j
 ,ϋ��E/jN����ˋo5󳓓d=;�q������N���R�g�xqR�&gt;j�f�Y�^�6�O��}����Os�=%�H}���OE�r@�@�]JY+����vT���f&gt;׻6�R����t����*5������T��&gt;�H%��&lt;�K�f��oUz���L(��&gt;&lt;�~E��nt�ʄR4v��\�=��a}�5J��6�	��%���Dj�+`&lt;�Z&gt;/ג��0�qܴ{�]x�E#m! ���h����0�]��8��ҷK��t��hO�(��|KB���̏��������w�q�h;����%L~�	P]"�B@���l�����A�::4���z... (set the log level to DEBUG or TRACE to see the full content) 
  </msg>
-<msg time="2025-02-06T23:06:13.509871" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2025-02-06T23:16:39.799605" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>https://saucelabs.com/</arg>
 <doc>Sends a GET request.</doc>
-<status status="PASS" start="2025-02-06T23:06:13.463198" elapsed="0.046725"/>
+<status status="PASS" start="2025-02-06T23:16:39.748069" elapsed="0.051566"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2025-02-06T23:06:13.510645" level="INFO">Argument types are:
+<msg time="2025-02-06T23:16:39.800395" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2025-02-06T23:06:13.510259" elapsed="0.000439"/>
+<status status="PASS" start="2025-02-06T23:16:39.799971" elapsed="0.000490"/>
 </kw>
 <kw name="Get Title" owner="SeleniumLibrary">
-<msg time="2025-02-06T23:06:13.512801" level="INFO">${title} = Sauce Labs: Cross Browser Testing, Selenium Testing &amp; Mobile Testing</msg>
+<msg time="2025-02-06T23:16:39.803896" level="INFO">${title} = Sauce Labs: Cross Browser Testing, Selenium Testing &amp; Mobile Testing</msg>
 <var>${title}</var>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" start="2025-02-06T23:06:13.510856" elapsed="0.001970"/>
+<status status="PASS" start="2025-02-06T23:16:39.800640" elapsed="0.003289"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${title}</arg>
 <arg>Sauce Labs: Cross Browser Testing, Selenium Testing &amp; Mobile Testing</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2025-02-06T23:06:13.512965" elapsed="0.000130"/>
+<status status="PASS" start="2025-02-06T23:16:39.804137" elapsed="0.000163"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-02-06T23:06:13.645789" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-06T23:16:39.927931" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-02-06T23:06:13.513231" elapsed="0.132659"/>
+<status status="PASS" start="2025-02-06T23:16:39.804561" elapsed="0.123523"/>
 </kw>
-<status status="PASS" start="2025-02-06T23:05:19.762352" elapsed="53.883825"/>
+<status status="PASS" start="2025-02-06T23:15:46.415312" elapsed="53.513146"/>
 </test>
-<status status="PASS" start="2025-02-06T23:05:19.142571" elapsed="54.504397"/>
+<status status="PASS" start="2025-02-06T23:15:45.941822" elapsed="53.987278"/>
+</suite>
+<status status="PASS" start="2025-02-06T23:15:37.668405" elapsed="62.261358"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="navigateToAboutMenu" id="s1" pass="1" fail="0" skip="0">navigateToAboutMenu</stat>
+<stat name="TestCases" id="s1" pass="2" fail="0" skip="0">TestCases</stat>
+<stat name="addItemIntoCart" id="s1-s1" pass="1" fail="0" skip="0">TestCases.addItemIntoCart</stat>
+<stat name="NavigateToAboutMenu" id="s1-s2" pass="1" fail="0" skip="0">TestCases.NavigateToAboutMenu</stat>
 </suite>
 </statistics>
 <errors>
