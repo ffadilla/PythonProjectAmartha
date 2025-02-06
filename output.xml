@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.2 on win32)" generated="2025-02-06T14:34:00.954646" rpa="false" schemaversion="5">
+<suite id="s1" name="loginPage" source="C:\Users\User\PycharmProjects\PythonProjectAmartha\TestCases\loginPage.robot">
+<test id="s1-t1" name="LoginTest" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:34:01.164495" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-06T14:34:01.164264" elapsed="6.698177"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:34:07.863251" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T14:34:07.862913" elapsed="0.055850"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:34:07.919335" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<arg>id:password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T14:34:07.919137" elapsed="0.015628"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:34:07.935205" level="INFO">Clicking element 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T14:34:07.935038" elapsed="0.247530"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:34:08.183088" level="INFO">Clicking element 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T14:34:08.182904" elapsed="0.231890"/>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:34:08.419487" level="INFO">Current page contains element 'id:shopping_cart_container'.</msg>
+<arg>id:shopping_cart_container</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-06T14:34:08.415665" elapsed="0.004000"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-06T14:34:08.420547" level="INFO">Verifying element 'css:.shopping_cart_badge' contains exact text '1'.</msg>
+<arg>css:.shopping_cart_badge</arg>
+<arg>1</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2025-02-06T14:34:08.420168" elapsed="0.008979"/>
+</kw>
+<status status="PASS" start="2025-02-06T14:34:01.163305" elapsed="7.266409"/>
+</test>
+<status status="PASS" start="2025-02-06T14:34:00.956009" elapsed="7.475406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="loginPage" id="s1" pass="1" fail="0" skip="0">loginPage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
