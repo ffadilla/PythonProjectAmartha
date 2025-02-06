@@ -1,4 +1,4 @@
-**How to run this project : **
+**How to run this project :**
 
 - Clone this repository https://github.com/ffadilla/PythonProjectAmartha.git
 - Make sure all environment variable already installed in your local :
