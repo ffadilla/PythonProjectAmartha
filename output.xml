@@ -1,56 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.2 on win32)" generated="2025-02-06T14:34:00.954646" rpa="false" schemaversion="5">
-<suite id="s1" name="loginPage" source="C:\Users\User\PycharmProjects\PythonProjectAmartha\TestCases\loginPage.robot">
-<test id="s1-t1" name="LoginTest" line="9">
+<robot generator="Robot 7.2 (Python 3.13.2 on win32)" generated="2025-02-06T21:17:53.641158" rpa="false" schemaversion="5">
+<suite id="s1" name="navigateToAboutMenu" source="C:\Users\User\PycharmProjects\PythonProjectAmartha\TestCases\navigateToAboutMenu.robot">
+<test id="s1-t1" name="navigateToAboutMenu" line="11">
+<kw name="openBrowserAndNavigate" owner="baseUrlAndNavigate">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-06T14:34:01.164495" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
+<msg time="2025-02-06T21:17:54.299180" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/'.</msg>
 <arg>${baseUrl}</arg>
-<arg>${browser}</arg>
+<arg>${baseBrowser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-06T14:34:01.164264" elapsed="6.698177"/>
+<status status="PASS" start="2025-02-06T21:17:54.298975" elapsed="7.805818"/>
 </kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-06T21:18:02.105045" elapsed="0.260055"/>
+</kw>
+<status status="PASS" start="2025-02-06T21:17:54.298382" elapsed="8.067089"/>
+</kw>
+<kw name="userLogin" owner="baseUrlAndNavigate">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-06T14:34:07.863251" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg time="2025-02-06T21:18:02.367846" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
 <arg>id:user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T14:34:07.862913" elapsed="0.055850"/>
+<status status="PASS" start="2025-02-06T21:18:02.367133" elapsed="0.067090"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-06T14:34:07.919335" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<msg time="2025-02-06T21:18:02.434673" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
 <arg>id:password</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T14:34:07.919137" elapsed="0.015628"/>
+<status status="PASS" start="2025-02-06T21:18:02.434444" elapsed="0.014917"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-06T14:34:07.935205" level="INFO">Clicking element 'id:login-button'.</msg>
+<msg time="2025-02-06T21:18:02.449719" level="INFO">Clicking element 'id:login-button'.</msg>
 <arg>id:login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T14:34:07.935038" elapsed="0.247530"/>
+<status status="PASS" start="2025-02-06T21:18:02.449534" elapsed="0.239431"/>
+</kw>
+<status status="PASS" start="2025-02-06T21:18:02.366438" elapsed="0.322809"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-06T14:34:08.183088" level="INFO">Clicking element 'id:add-to-cart-sauce-labs-fleece-jacket'.</msg>
-<arg>id:add-to-cart-sauce-labs-fleece-jacket</arg>
+<msg time="2025-02-06T21:18:02.690520" level="INFO">Clicking element 'id:react-burger-menu-btn'.</msg>
+<arg>id:react-burger-menu-btn</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-06T14:34:08.182904" elapsed="0.231890"/>
+<status status="PASS" start="2025-02-06T21:18:02.690099" elapsed="0.219139"/>
 </kw>
-<kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2025-02-06T14:34:08.419487" level="INFO">Current page contains element 'id:shopping_cart_container'.</msg>
-<arg>id:shopping_cart_container</arg>
-<doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2025-02-06T14:34:08.415665" elapsed="0.004000"/>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-06T21:18:02.909788" level="INFO">Clicking element 'id:about_sidebar_link'.</msg>
+<arg>id:about_sidebar_link</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-06T21:18:02.909595" elapsed="46.650080"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2025-02-06T14:34:08.420547" level="INFO">Verifying element 'css:.shopping_cart_badge' contains exact text '1'.</msg>
-<arg>css:.shopping_cart_badge</arg>
-<arg>1</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2025-02-06T14:34:08.420168" elapsed="0.008979"/>
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2025-02-06T21:18:49.615204" level="INFO">GET Request : url=https://saucelabs.com/ 
+ path_url=/ 
+ headers={'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2025-02-06T21:18:49.615985" level="INFO">GET Response : url=https://saucelabs.com/ 
+ status=200, reason=OK 
+ headers={'Cdn-Cache-Control': 'max-age=1200', 'Content-Encoding': 'br', 'Content-Security-Policy': "frame-ancestors 'self' https://app.contentful.com *.saucelabs.com:8000 *.saucelabs.com *.saucelabs.net;", 'Server': 'Vercel', 'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload', 'X-Content-Type-Options': 'nosniff', 'X-Matched-Path': '/', 'X-Powered-By': 'Next.js', 'X-Vercel-Cache': 'HIT', 'X-Vercel-Id': 'sin1::iad1::rznx4-1738851483853-aff08b25f7b4', 'X-Xss-Protection': '1; mode=block', 'Via': '1.1 google', 'Date': 'Thu, 06 Feb 2025 14:12:43 GMT', 'Cache-Control': 'public,max-age=3600', 'Age': '367', 'ETag': 'W/"11uj65d3nkl8aic"', 'Content-Type': 'text/html; charset=utf-8', 'Content-Length': '58128', 'X-Cloud-CDN-Cache-Hit': 'hit', 'X_BACKEND': 'marketing-cms', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'} 
+ body=��_��}��ߟ/
+7��LI~R����d&lt;��^[���Ȧ��8@Ӳ������=��/vS��v鶩D�2�H�,��I�&amp;Euν���S�73�{�)�Y̐*ސ23�wF̝J~#��PR�xJ��!my)��"3$�rAr]�?���IQSrPN�pR9��I�&amp;�"I���l����\d�KA����qt�p����6�Ү����]��nC�.?nQ��wH:*��?#)�R59gGQ���*�fp�8O,*�%���ޔ�U%��'3���#���Y�F_�:�ѵw!D�����
+���k��݅��z�,�onmj��&lt;*[ٿ�AO��&amp;��M���V����
+o2��&lt;�j��������}v�Q������ֵ!���PԮ-#WE{\GږѮ�C馩M��8dtUB:k��t��'�][kr&gt;@��9ږ�G]�ӑ	���wܙ�Z�y�k&lt;�N�,�A1��d��c�ؖ�	��Q�e�,��! i���|q�7UB�ds4���㟯�J�����_�^�^w�#,����x]&amp;'�e2+�D��W����:�=ц���Y2�O��d6��2=�ɩ����nزy��4٢.'�k��)���ˏ�\�+���jmA�و�����Q��}d�'G��F�������C�1�Eʢ�"&gt;zW�EѨ�������V�2E`��Rewe&amp;�5��|a*&gt;��,�XCF����qeo�KQ��p6���Ŗ$z�|�/nΞq�CKQ��i�"c��-��ho
+�L,��U�B��E�QwH[W�1�x}n�;CB��kS�~�}5�����;��|3�g�L��Lu`�&lt;$l�]۔q���ӵс+q�nJ:$
+�h0gd�\U��e��Z_�7S�5�ǘ؝%�x,�F?$ ]Yg;׆�2���(u�N�qc�g��̫tA�쁢�H��Q�eљ��&gt;��T)���.�\ꦩy�ڠ��ݡ� o�GV]y�����6�B�5O?a*��7��ǝ���yX.�-����(.'S�.�tE��/ȿ[�g�� �9��}�&lt;��C�����������M��{y�����A�q\���7떐��Ǌ��s��h������Ѵ�z�Ц�+4g��c!M7?���(m!lc	����c�ޣ�`ek��T�Q�6�5k�b6Зâr����da?fc�a���nh����P����2�Y�٘��!�� �Ń����.�����q=��	okܡ%ζ�c1� I�#|���M�&gt;낤[�Q� �bp�IO6�[�z0�;i�)&amp;�x``Ăd��6P(J+3l���u��?����E���8b���G`�l�e7H?N&gt;Vzs�wر�,�^6ڣ�{W�46��OX9���Oj�v�|؁We�د���_����o�/�����_��o�����Y}����l���=��=&gt;ޮ^~�}z�{�W�D�d��J�k�K^�6b��ʦC�u���	WV���Ƌ����8������n���o�a�j=E�I�����&lt;����������P�)k�����'?���g��'���b��9�Ϫ���d6�b�/t��R��ir1-��	�;�y��V������m4�hkBT�#�6`��tQ`C�k}���TD�GmY}1"=�j��X��&gt;�B��`4�Dg2�+����7������R�g�@׊���Vaa��ة�rض^��t�X������0.Y)��|:ܕ܍?L~��6}�W�A,v+&amp;�a��Al5,�|���|������մ��2!,���(tڏ�A,�U)rG�!����nh�%JН����I�j�)�������'��G�MS�\[l'�p�E���A��y�&gt;=O(זG�mIG��@�	��Qc7e^���糏�J����Î��OOߧ��V�m�N[Sa���C(������]8%lq�25^�e�R��gi�!vOTtE��65���M0GEm��@�D�E%V�c��
+�4yy�,)��e��c�Ţ;�dQ�]Λ���iR�6ogS*fq�6��ư�e{(����,���7D'�{��*�n��{�uQu�X|�AkHu�	��H�B^�n��^�X��[���M��+�{5^����?�{ڕh/�	�fl�w��I�IK����^'�ڊM:�v�D�R8[�������&amp;e�����6ЯxH�t~��%'��f:�ϧ�����h�&gt;�zVT����X3�]6]� =�ʩn��p6현�Ƣ&gt;�X����N��)r.�%9�����"9��&lt;�#uٱ6`ț���˒tw)�����$`��of��y��W�$w��-?�l&lt;V�=;
+9/ǲ�#�0q̭�l��NONg{�/�Q����\��Tp�u��#OP�
+�#�p����#%|��C���i�nXx��e�-t�	�t^W&gt;��`��n_�X������L�S�_$����t��EQ�����-��S@ ё?t��#�{��?� 6Rth�U�g��	h�����Q@�i:�ꣴ^�k�&lt;���!�6*�O�Cdl�;��hD�\��깆cD;Wb��Rd(D�/γ�L,*;P���rښ$ �q�%o0p�r�V[�Q]v5RF�s���:(��'��߂�X��T�8��Y���c[�\���|�!&lt;��A��8��q���e�w��|�B��:��[m7XF�Fjj=FDi�4�QtG���u��oYaUaA�	%�H�s1�5!�\�A��X,9�$W6BO"W��2�oM�3_��0�X�dd��O �*�5��E��~5��[\��&lt;J��/�)C�ۀ�/��&lt;�ƻ�-�&amp;�|��� �B�E�P�2��^��k4����-���;|������Uݰ ^KQ�Q�ā����#����SsUב��[YNXQ�m�"�S2�Gl���f��v�;[��r&gt;b���,��Y|C$&amp;NΗ��V�1~����seqNP�	�߃�m�90c+�p�&lt;�U����_�U��-��d���(�`3D��܇��ohev����eH��d/I��ۜBf��u	c��p&gt;��!M��.�N�S:W�u��X�SĦ�.k�[Wm(4���#�.#4���n�C�H^&gt;@�7��WT�3��i�ܿ�ZJ˃���F��B������5M�qv���[�����.�Ki���BX�Ux�m�u��Go/m��-oڮ����KN0�~�Z�����8�]^t���dhjC�I&amp;��da&gt;n�Oq2]��X��S;q�|f3����${��Cl*�;ZӎXg�L�f�:@�,Ď�yov���A�Rx�83Y��}mS�����H��F�/m��oZC����Kf+�]x�*q|�Yp!4U��m���\oa*~h@�x����8���3��R��G��c�0~֕��H,^�x2UJ����v��n�L�2펉8�+�J*2�R/����+�}
+���TGJ��G�c89{�N��˼�ZA�/(�q��|���L^({q�dx�&gt;zP����N&lt;*�g�cA@?���?}�zy�}~�{���a�n�HQ&amp;G���SF�tB�F�p3���(l����o�gr^oPn��w��q�Q���A�驀lg�l@!J�6F=�s�&lt;?��N�u�k��wE��VG�҄]�hS0�՚������m���Cnuhv�Oj��?C:�cpU��o�������Q�\-e��r~�m�KIf����&gt;ɤ���g��a����фҺ=���9�BRcn���Q�\I�M4DGWz�Q�+�a6;ݕ�T�7���)�$Mgby�E����{�4z]c���������ן��'���@K���YJ]��oh�	�=,�LjOś�˿w��R��n��dv�T/~g?�0���K{]��6�a����=|ǊU���_���p}O��8V�F$Osw��hD'=T�C��������Q��f�&lt;���)#��O�Ul:���ǧ�6����Y)���X/�Qe�F���g!el�\��-ݡ�O�mY�j�%�6�N��ϤD[d.��ۘ�elh�����`�k^��R��MN"�+�AK�~ɶ�,��p&lt;�]L��נ����b�2?;�	0��d6c{叓����|v�5*�*�F�{�����o�7tH�l2��&gt;-G!�\n�8��
+I��~-G�a�a��_��[�M7bW+.v8WI�ٮ��L��&amp;F*��,ɗ��2����Q��4O������1¾�&gt;��x��$q��q5J��JQ�ݮ߆�ޓ�r�V�F}X�"��r��ն��2ߗ�}2�c���	*�2�
+�3Ҫ1���V%����a�o1���!ks(��m��)!�&lt;��x��,�eJ�1)@�1�����2�-��{�;C��^;ac�,��%��?,&lt;6ȶU9.^��&amp;�T��Ms	�
+YO���	r��I���T�M�aY�2����d���,ɕRz
+�4�g���l��V�����_�w��010?;�-��"*��~"��(���SV6�������t&amp; (f�i[�HQ��l�z�&lt;�%5WW\t��w�m�!@=n隧��ר
+��k�^;O�!-&lt;��C!��*$b�[��	x�n�Bu���Q�)�;�Q�S��g1�xk��{!	I��D}���M�@=H��;��1w��l��[��B����o�붪Ч+讟n�F&lt;��)E��Mzz\�we�aa���YvCJr�֎�|5�vð$�ͬo��%�8���@�誨Zb����Nk&gt;��v����z��H)�ܩQ"`�g`��Q�8�U�]qbz�Vo�
+j�Q@��#�Tɢ�X-��X����
+5xܭV�\dE�y��|ǵ�ɲ xй=4�Z#��f��ɏ�&amp;u/y�+:�.UG��p�|?��\)Eq�=��Ś��v�23�4w�)E��(W�ָ
+��6j�ᝋ�f�A���FpD���HQ��I�Pd6W$5��{�3�U��E��+���3Ic�/_gh�a�g��C}�no��B"�Vp1�Y(�,4_�4d��,���l/�L��%��N.��&lt;��{D��H�M3�ޛa������(fT�۾���X8�����6`�&lt;�]��D���{+o�@�d�m�{v��Ss9H�=Ge��PŴ���_�e}��3���Qݛb�`r���99&gt;�ֲ֑柑v?�zr��K�5��C�H��U�A��yC���%0��A���X��.�����/W��
+�1�6( a=,��K1�f�E��0}�]�j=��B���@;{�4��.+�5R�)͋�V��8�J��n�@��_�/{Q�Pl��6�����Ybh��u����&gt;[`��6��r��ʲY��?4�.�/WK��a��\����$ƌ��&lt;�����s(�m�v\�������Sp�7]�xW��}��}��X:��7��T�=j�����䋡c���y���B%���#��*�cƊ�3�wJgE.��I�&gt;=);0��[r���?O�m���&lt;�2��)oұ�9������=�J���u�įul۱$Cv�8�R]����,�����7��Z�r�������|Gh9=�)��po�f����'�- =Ӱ&gt;�Cэ&amp;T����C4o�Í��%�2� 0^��yK|�re!!m��Fy&gt;KN���rF���UJ)�ܳ��.�|�ã�($�B��0W�8�uCp T���ȱ������V��w�\f��|�u��h�����8F�y�l�:���M�-�a�10;ٙq�Ʒ.����O���|��=;���L���۩�|��E�ڶ�J�נ�$R��p/�Ҵ�*�9�a��UQA�
+�b�\��C��2�0'��^p�Q�K�֏��[S*�ȅ�	ҩ@����(#+���JX�m� l�,�ˋ4
+��Z0u���D&lt;�뀑�o�q�G\��b�^N��x6m鶊N0�m;i(�8�wb�\&amp;B�}Ϙ
+�(5锉!e�܎
+W��γ����&lt;���4����h���2���F,"�����#������N6Γ�/�%�V�q�Qyzt��b��6�u6�����4�|�D�����qe�3�Ms���%l��[��E����)�t��Kv|&lt;g);O�'�.�v�K/s}����I{���_c��C�Y`G��Dd����x"�ƋY���8%�A�����=K�R*����=�LB�n��~�?fs�v�q'���P!����x���F-��17H�o�7p~:M�^�4c��M���^{�M�&amp;���=��6E�䰆@�Orb����Kv�/���uȉ�q��F`T%�:&lt;���Z�q�+;���Ų6V	�g���FFy�|O}F���Xf*����!�T?T�v����7$�%��ݡ�8[�_ �(W�0�l~vF���U����#�ߧ4���ㆻ�`�&gt;9W������F)�@�i*����ܾ�5�����ş�`r�+&lt;�������;�&lt;n*n�R\��Y�F��S��ք8~]�J�&gt;^��/L��Uֻ��A��~�n���aض�A��ۨl1"�n��wݥ("�_mlUU
+נ�:�K��Yׇ����89c7����M{��5��6���u�L-6�o�� 8{��0�Y2㑸7���]�^e9��W�&lt;7���U*��	{s��\��)5~��0��&lt;���(&lt;����|�x^)-��QtEg����HT���~I)�j�)d��q���~���E�s��lb�2D�b�����Q�&gt;�a��rI���8�m]��B�0Ai�ɒ,P��^���b�&lt;?��p\����p�`D�Љ��ڇK譮'P��A�y�	~/�ӓd��55��qRZA��)~c�i�S�=+ܮ���)EZ����g��Z9�6���e\,�0@#AڌR[ӊu3V�g7�N-�%�,���@pzv!ɶn:l�܍l��CH��͗а��m���#�kx!�3��؆Pp��d�ȗ+[PR� �(�rà�q���3!�5�#�U]��A����t�{^�Y�pN��Z�����v;,�&amp;��SE�������nJ�n������+�9&lt;z�3��CI������&lt;��7���vu�s-�VH�vxv�$@n,M�L%��;E�n8;���J��Z��&lt;�#��B
+л�#��R�L�[��T'�t�a�vR���S0�jO :�E�����n��չľ��`	��/��uf��ǻ'��a���5C���a��ڈ�$5��i��_���N0|�2���v�k�T�;�T�xs��M�L0kS:���L�X���c[S�h��`Jr���b@�R�."�CAѺ���r2M�G�0��q��"E��r�1�Y�|��&amp;�,`㑏��2���A������U&gt;k�F��}��9�u�j�P ����̣�h���4�$������Y��xZx�DFޟ���&amp;0�C�Q,�8Ŋ�G��m�IO��-=p�!	 Q�8=&gt;��7&lt;�Fo�j&amp;(���fp���N�糿r���z����7���G�]�ܼ��v{�z�z�����}�j�&gt;=�^�n��?]K.�ή�%��p{O�n�����������71甁��/i������yu��
+*�����K��gP�ߟ~y^]�J��B�n:���������O�?�}z���+G4�
+�;
+,eW��u�w�u���&lt;à�+*.DU[װVXzJ"�D�b���1h��-T�U��(_-���2;���5m��ϓA��������F1��ۀpvr2�ᧇ�%6���O��;��������o��(q�._�	��d{�&lt;�O���F*h�������W�OW׫������^��bFW$�f;������{�?ܴ)j��g����;|���������/�M���������=1����ǫr�- �{U朮��=�l}�0���AZM��������E�Q�2_���Nw�.�{Z]\\@P���&amp;��3�*V�!�P�b�1�n'J�&lt;��I&gt;ϠVG&amp;T/ ��F߻���6!�F1ʑ켅�,�E�o5kW&amp;� �[h^���8{��z\W�k6��w�~���!����`z��r���2��?@�������,���ҭ�l9/:U��'����GQ��(tQ��1��eN�� �ҕ%~3-��{�C僣u�
+�Z���R���՞��&lt;ݒ�!t��%���3'6�NJ�V�|\P�Ki�*-2L�#�x5V^���+��A[g?���27H��i�fC]�W6�o��?��bհf�|cvbG'h�d�Pv[�r�S�1K���|v!�V��NO[�&lt;h*|�i"`�&lt;?M�!(�3���Ugv`�*cMآ�1o嶦&gt;�����3���|2����#9����]�ޣ�'�pa��H�Pymp"Fj�"ά#S��@��
+��ˎ��{dp��:�X~J�o$�.ِܬLfN��kD�Ov9]��4M5��z��wvv��-�3�N��y����,��nLF��"�RZ�ސ�	!)�ց=��֪d��Q���(Ac��-�`lHBO�ۦbq�F���|��_��1N�ݽN7��o�T�ӳܘ�;"s�+���w�Jo�|�
+����
+lG���N�`ڔ��DM��Fɠ��eϊ'�����xPl������z&gt;�{�z�����z&gt;`��A=�Jz;�
+��9[�	��(%��8��Zw�^��p����.�_nͫ��w����l��J�$8Ӎa�8���N��NI�Z����䙀g�W�1#��o9R��.��HQ�)���0J��!�%��dZ�%Gj���@�a����ѹlG�M:������9J&amp;�m&amp;��$9�M��J�zE�}���ӣ����PdbL�r=*#r1t@��u�����;���28$ޥ�R�}�5�&lt;/�&lt;�� Z��t�����)����\�V�Vb�N��*��2T�|�B�v�MbPgg��C~d&lt;���8��`��v�����Z����,K�u&amp;Ƅ5-�~L^��6�,F�&lt;EB�;V闽g�%��[�	\
+�")��8T��&gt;tevز�A�����U��rRX�l��0#ߟ!cW�wGlLcvT�ƒ�\tv"f/y�ᘚ���:�T��m�:�r;~Y6S� P��0���BHڢ�^��-���Ӌ����05R���R?(Zx���*�W�����b߈'И�7n�ݓ3vc��&gt;��BTiSc)�dB4i�5_�;A@�+I��	A�!��u��[[�I�'� ���,&amp;p淑�V-��z64sR*���]��NY�$2gt�i�2�c8���z4�*h�`'��4X�s}�|-�b"�{�B�(Gx�}��h�~F6Jx�ئ��R�MKٛ&amp;,?���
+i&gt;���r�hpR��T��D�#�@��+�)l�-�4&lt;���$��,Ns�&amp;l���(�GB,�]&gt;�kU�)9�$��2��(������"$C?c(���a��4ʭ}�����c����{��:`d��V�h���`3�"�B�*ɷ��w�ݠ�y����d��Yb�ۚR�9n1�)�*TJ���2�ӌ��ϓW5c����F|G��`�`��~g.s6$.s�c3�&gt;������#󑃑���/q�CҰ���ȴ�d0�6;l���NO��F���2;���±�Yy:�̞H6�s��t�c��n!OO ���tzZ&amp;v8�ӳt�F��Y��&lt;=g-�pЕ=���J$����%�Ii�m�0�&amp;S0�O��p�����2I�X����Y��\aFc{����V��4��L�16R
+�#j&lt;, �R�T�!�m��0�\g��&amp;�q0r�&lt;i:0��Ia�|y��͕m�K.�%J��^�eX�uJ���R!-��د226"a��'cq&lt;2���B����B��5u�d21�;&amp;e&gt;�FV��HT�.���R׵~H��Y	�l䜒�T���*�y+�	Y.�z�(����qe8��,d0=&gt;[Jj��.����O�֤y���u��.�/R�����g��������y����b`�*��g�e����8�~�aW��3���P3�*9O.�{^srZ^������R���'�֜W����I�j
+,ϋ��E/jN����ˋo5󳓓d=;�q������N���R�g�xqR�&gt;j�f�Y�^�6�O��}����Os�=%�H}���OE�r@�@�]JY+����vT���f&gt;׻6�R����t����*5������T��&gt;�H%��&lt;�K�f��oUz���L(��&gt;&lt;�~E��nt�ʄR4v��\�=��a}�5J��6�	��%���Dj�+`&lt;�Z&gt;/ג��0�qܴ{�]x�E#m! ���h����0�]��8��ҷK��t��hO�(��|KB���̏��������w�q�h;����%L~�	P]"�B@���l�����A�::4���z... (set the log level to DEBUG or TRACE to see the full content) 
+ </msg>
+<msg time="2025-02-06T21:18:49.617018" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>https://saucelabs.com/</arg>
+<doc>Sends a GET request.</doc>
+<status status="PASS" start="2025-02-06T21:18:49.559984" elapsed="0.057100"/>
 </kw>
-<status status="PASS" start="2025-02-06T14:34:01.163305" elapsed="7.266409"/>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2025-02-06T21:18:49.617923" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2025-02-06T21:18:49.617455" elapsed="0.000530"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-02-06T21:18:49.738208" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-02-06T21:18:49.618173" elapsed="0.120181"/>
+</kw>
+<status status="PASS" start="2025-02-06T21:17:54.297803" elapsed="55.440819"/>
 </test>
-<status status="PASS" start="2025-02-06T14:34:00.956009" elapsed="7.475406"/>
+<status status="PASS" start="2025-02-06T21:17:53.642794" elapsed="56.096434"/>
 </suite>
 <statistics>
 <total>
@@ -59,7 +129,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="loginPage" id="s1" pass="1" fail="0" skip="0">loginPage</stat>
+<stat name="navigateToAboutMenu" id="s1" pass="1" fail="0" skip="0">navigateToAboutMenu</stat>
 </suite>
 </statistics>
 <errors>
