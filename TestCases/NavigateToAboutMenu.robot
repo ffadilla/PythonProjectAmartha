@@ -5,7 +5,6 @@ Library     RequestsLibrary
 
 *** Variables ***
 ${baseBrowser}  firefox
-${baseUrl}  https://www.saucedemo.com/
 
 *** Test Cases ***
 navigateToAboutMenu

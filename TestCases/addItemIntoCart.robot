@@ -4,7 +4,6 @@ Resource  ../config/baseUrlAndNavigate.robot
 
 *** Variables ***
 ${baseBrowser}  firefox
-${baseUrl}  https://www.saucedemo.com/
 
 *** Test Cases ***
 addItemIntoCart

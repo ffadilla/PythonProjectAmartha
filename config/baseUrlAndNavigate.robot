@@ -1,13 +1,23 @@
 *** Settings ***
-Library  SeleniumLibrary
+Library    SeleniumLibrary
+Library    ../config/loginVar.py
+
+*** Variables ***
 
 *** Keywords ***
 
 openBrowserAndNavigate
-    open browser    ${baseUrl}  ${baseBrowser}
-    maximize browser window
+    ${variables}    loginVar.Get Variables
+    ${baseUrl}      Set Variable    ${variables['baseUrl']}
+    ${username}     Set Variable    ${variables['user']}
+    ${password}     Set Variable    ${variables['pwd']}
+    Open Browser    ${baseUrl}  ${baseBrowser}
+    Maximize Browser Window
 
 userLogin
-    input text  id:user-name    standard_user
-    input text  id:password     secret_sauce
-    click element   id:login-button
+    ${variables}    loginVar.Get Variables
+    ${username}     Set Variable    ${variables['user']}
+    ${password}     Set Variable    ${variables['pwd']}
+    Input Text  id:user-name    ${username}
+    Input Text  id:password     ${password}
+    Click Element   id:login-button
